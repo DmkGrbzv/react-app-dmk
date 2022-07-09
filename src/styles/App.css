@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App{
+  width: 90%;
+  margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.App-container{
+  width: 100%;
+}
+.remove-btn {
+  margin-right: 0.5rem;
+}
+
+.post__content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.post__btns{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.post{
+  width: 100%;
+}
+.post-list{
+  margin-top: 20px;
+  width: 100%;
+  height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.post-list div{
+  margin: 5px 0;
+}
+.post-enter {
+  transform: translateX(-350px);
+}
+.post-enter-active {
+  transform: translateX(0px);
+  transition: all 500ms ease-in;
+}
+.post-exit {
+  opacity: 1;
+}
+.post-exit-active {
+  transform: translateX(-350px);
+  transition: all 500ms ease-in;
+}
+.page__wrapper{
+  margin-top: 30px;
+  display: flex;
+  position: fixed;
+  bottom: 4px;
+}
+.page{
+  padding:10px;
+  border: 1px solid teal;
+  cursor: pointer;
+}
+.page__current{
+  border: 2px solid orange;
+  font-weight: bold;
+}
